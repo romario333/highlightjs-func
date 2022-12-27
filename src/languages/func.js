@@ -13,7 +13,7 @@ const IDENTIFIER = '(?!")(`([^`]+)`|' +
   '(?![_`{}]))([^;,\\[\\]\\(\\)\\s~.]+))'
 
 const STRING = /\"[^\n\"]+\"[Hhcusa]?/
-const NUMBER = /(-?(?!_)([\d_]+|0x[\d_a-fA-F]+)|0b[1_0]+)(?<!_)(?=[\s\)\],;])/
+const NUMBER = /(-?(?!_)([\d_]+|0x[\d_a-fA-F]+)|0b[1_0]+)(?=[\s\)\],;])/
 
 export default function(hljs) {
   return {
